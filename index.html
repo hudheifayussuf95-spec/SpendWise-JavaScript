@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Budget Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">SpendWise</h2>
+
+            <nav>
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#budgets">Budgets</a>
+                <a href="#expenses">Expenses</a>
+                <a href="#reports">Reports</a>
+            </nav>
+
+            <p class="sidebar-footer">Manage your money wisely.</p>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="dashboard">
+
+            <!-- Header -->
+            <header class="header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome to your SpendWise budget tracker.</p>
+                </div>
+
+                <div class="profile">
+                    <span>My Account</span>
+                </div>
+            </header>
+
+            <!-- Budget Overview -->
+            <section class="overview" id="budgets">
+                <div class="section-heading">
+                    <div>
+                        <h2>Budget Overview</h2>
+                        <p>Your monthly financial summary</p>
+                    </div>
+
+                    <button id="budget-button" type="button">
+                        Enter Budget Information
+                    </button>
+                </div>
+
+                <div class="cards">
+
+                    <article class="card" tabindex="0">
+                        <h3>Monthly Budget</h3>
+                        <p class="amount" id="monthly-budget">KES 0.00</p>
+                        <span>Your planned budget</span>
+                    </article>
+
+                    <article class="card" tabindex="0">
+                        <h3>Total Expenses</h3>
+                        <p class="amount expense" id="total-expenses">KES 0.00</p>
+                        <span>Your total spending</span>
+                    </article>
+
+                    <article class="card" tabindex="0">
+                        <h3>Remaining Balance</h3>
+                        <p class="amount balance" id="remaining-balance">KES 0.00</p>
+                        <span>Money left in your budget</span>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Expense Categories -->
+            <section class="categories" id="expenses">
+                <h2>Expense Categories</h2>
+
+                <div class="category-grid">
+
+                    <div class="category-card">
+                        <span class="category-icon">🍔</span>
+                        <h3>Food</h3>
+                        <p>Food expenses</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🚌</span>
+                        <h3>Transport</h3>
+                        <p>Travel expenses</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🏠</span>
+                        <h3>Rent</h3>
+                        <p>Housing expenses</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🎮</span>
+                        <h3>Entertainment</h3>
+                        <p>Leisure expenses</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">💰</span>
+                        <h3>Savings</h3>
+                        <p>Money saved</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">💡</span>
+                        <h3>Utilities</h3>
+                        <p>Bills and services</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="results" id="reports">
+                <h2>Budget Results</h2>
+                <p id="result-message">
+                    Select "Enter Budget Information" to calculate your budget.
+                </p>
+                <p class="hint">
+                    Your calculation results will also appear in the browser console.
+                </p>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 SpendWise. All rights reserved.</p>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
